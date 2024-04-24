@@ -1,5 +1,7 @@
 #!/bin/bash
+
 set -e
+
 error_spot(){
     echo " error occured at line number $1 : and error command is $2 " 
 }
