@@ -16,6 +16,16 @@ G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
 
+validate(){
+    if [ $1 -ne 0 ]
+    then 
+        echo -e "$2 : $R failed $N "
+        exit 1
+    else
+        echo -e "$2 : $G sucees $N "
+    fi
+}
+
 check_root(){
     if [ $userid -ne 0 ]
     then
